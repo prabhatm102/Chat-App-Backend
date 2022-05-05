@@ -8,7 +8,7 @@ const conversation = require("../routes/conversation.routes");
 
 module.exports = function (app) {
   var corsOptions = {
-    origin: process.env.origin || "*",
+    origin: "*",
     optionsSuccessStatus: 200,
   };
 
