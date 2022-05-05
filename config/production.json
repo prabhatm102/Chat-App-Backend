@@ -1,4 +1,4 @@
 {
-  "jwtPrivateKey": "mySeceretKey",
+  "jwtPrivateKey": "",
   "db": ""
 }
