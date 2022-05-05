@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "mySeceretKey",
+  "db": "mongodb+srv://prabhat:1111@chat-app.fobnd.mongodb.net/chatApp"
+}

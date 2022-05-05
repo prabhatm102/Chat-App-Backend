@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "chat_jwtPrivateKey",
+  "db": "chat_db"
+}

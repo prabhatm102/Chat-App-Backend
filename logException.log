@@ -1,0 +1,10 @@
+{"level":"error","message":"Unexpected field"}
+{"level":"error","message":"Unexpected field"}
+{"level":"error","message":"Unexpected field"}
+{"level":"error","message":"Unexpected field"}
+{"level":"error","message":"Unexpected field"}
+{"level":"error","message":"Unexpected field"}
+{"level":"error","message":"unknown top level operator: $elemMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField."}
+{"level":"error","message":"unknown top level operator: $elemMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField."}
+{"level":"error","message":"unknown top level operator: $elemMatch. If you have a field name that starts with a '$' symbol, consider using $getField or $setField."}
+{"level":"error","message":"conversations validation failed: name: Path `name` is required."}

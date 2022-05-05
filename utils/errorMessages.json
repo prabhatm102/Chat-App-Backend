@@ -1,0 +1,98 @@
+{
+  "GLOBAL": {
+    "INVALID_OBJECT_ID": {
+      "status": 400,
+      "message": "Invalid ID!"
+    },
+    "NO_TOKEN": {
+      "status": 401,
+      "message": "Access denied!, No token provided!"
+    },
+    "INVALID_TOKEN": {
+      "status": 401,
+      "message": "INVALID TOKEN!"
+    },
+    "INVALID_USER": {
+      "status": 401,
+      "message": "INVALID USER!"
+    },
+    "DONT_HAVE_PERMISSION": {
+      "status": 403,
+      "message": "You don't have permission to access !"
+    }
+  },
+  "AUTH_API": {
+    "INVALID_EMAIL_OR_PASSWORD": {
+      "status": 400,
+      "message": "Invalid email or password!"
+    },
+    "INVALID_EMAIL": {
+      "status": 404,
+      "message": "User not found!"
+    },
+    "INVALID_PASSWORD": {
+      "status": 400,
+      "message": "Invalid password!"
+    },
+    "DEACTIVATED": {
+      "status": 403,
+      "message": "You are deactivated from login!"
+    }
+  },
+  "USER_API": {
+    "USER_NOT_FOUND": {
+      "status": 404,
+      "message": "User not found!"
+    },
+    "EMAIL_ALREADY_EXIST": {
+      "status": 400,
+      "message": "Email has already been taken!"
+    },
+    "USER_SUCCESSFULLY_DELETED": {
+      "status": 200,
+      "message": "User successfully deleted!"
+    },
+    "AVATAR_IS_REQUIRED": {
+      "status": 400,
+      "message": "Avatar is required! ,must be a file"
+    },
+    "SELF_DELETE_ERROR": {
+      "status": 401,
+      "message": "Unauthorized!, Can't delete yourself'"
+    }
+  },
+  "CONVERSATION_API": {
+    "INVALID_CONVERSATION_ID": {
+      "status": 400,
+      "message": "Coversation not found!"
+    },
+    "GROUP_NOT_FOUND": {
+      "status": 400,
+      "message": "Group not found!"
+    },
+    "NOT_A_GROUP_MEMBER": {
+      "status": 401,
+      "message": "You are not part of this group!"
+    },
+    "USER_NOT_A_GROUP_MEMBER": {
+      "status": 401,
+      "message": "Specified members are not a part of this group!"
+    },
+    "MEMBER_NOT_FOUND": {
+      "status": 404,
+      "message": "Member not found!"
+    },
+    "GROUP_NAME_ALREADY_EXISTS": {
+      "status": 400,
+      "message": "GROUP name already exists!"
+    },
+    "GROUP_ICON_IS_REQUIRED": {
+      "status": 400,
+      "message": "Group icon is required! ,must be a file"
+    },
+    "MESSAGE_NOT_FOUND": {
+      "status": 404,
+      "message": "Message not found!"
+    }
+  }
+}
