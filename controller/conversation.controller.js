@@ -219,18 +219,12 @@ module.exports.addMembersToGroup = async (req, res, next) => {
       return res.status(404).send(errMsg.CONVERSATION_API.MEMBER_NOT_FOUND);
   }
 
-  let oldMembers = conversation?.members;
-
   conversation = await Conversation.findOneAndUpdate(
     { _id: req.params.id, isDeleted: false },
     { $addToSet: { members: req.body.members } },
     { new: true }
   );
-
-  for (let member of conversation?.members) {
-    if (member?.toString() === req.user?._id?.toString()) continue;
-    io.to(member?.toString()).emit("addedToGroup", { data: conversation });
-  }
+  let allMembers = conversation?.members;
 
   conversation = await Conversation.findOne({
     _id: conversation?._id?.toString(),
@@ -240,6 +234,10 @@ module.exports.addMembersToGroup = async (req, res, next) => {
     .populate("creator")
     .select("-isDeleted -__V");
 
+  for (let member of allMembers) {
+    if (member?.toString() === req.user?._id?.toString()) continue;
+    io.to(member?.toString()).emit("addedToGroup", { data: conversation });
+  }
   res.status(200).send({ data: conversation });
 };
 
